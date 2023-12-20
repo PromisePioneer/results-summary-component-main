@@ -1,0 +1,285 @@
+/*### Primary*/
+
+/*- Light red: hsl(0, 100%, 67%)*/
+/*- Orangey yellow: hsl(39, 100%, 56%)*/
+/*- Green teal: hsl(166, 100%, 37%)*/
+/*- Cobalt blue: hsl(234, 85%, 45%)*/
+
+/*## Gradients*/
+
+/*- Light slate blue (background): hsl(252, 100%, 67%)*/
+/*- Light royal blue (background): hsl(241, 81%, 54%)*/
+
+/*- Violet blue (circle): hsla(256, 72%, 46%, 1)*/
+/*- Persian blue (circle): hsla(241, 72%, 46%, 0)*/
+
+
+
+/*### Neutral*/
+
+/*- White: hsl(0, 0%, 100%)*/
+/*- Pale blue: hsl(221, 100%, 96%)*/
+/*- Light lavender: hsl(241, 100%, 89%)*/
+/*- Dark gray blue: hsl(224, 30%, 27%)*/
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --orange-yellow: hsl(39, 72%, 68%);
+    --green-teal: hsl(166, 100%, 37%);
+    --light-state-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender:  hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+    --circle-color: hsl(241 ,73% ,47%, 1)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 62.5%;
+}
+
+
+.section--card{
+    max-width: 50%;
+    margin: 10rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.result-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--light-royal-blue);
+    padding: 3.1rem;
+    border-radius: 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+
+.result-heading{
+    font-size: 1.6rem;
+    color: var(--light-lavender);
+    margin-bottom: 3rem;
+}
+
+
+.result-score{
+    color: #fff;
+    font-size: 3.4rem;
+    font-weight: 600;
+    z-index: 3;
+}
+
+span{
+    margin-top: 1rem;
+    display: block;
+    color: var(--light-lavender);
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    z-index: 3;
+}
+
+
+.result-great-text{
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+.result-description{
+    color: var(--light-lavender);
+    font-size: 1rem;
+}
+
+.circle{
+    background-color: var(--circle-color);
+    position: absolute;
+    padding: 4.8rem;
+    border-radius: 50%;
+    top: 24%;
+    right: 26%;
+    z-index: 1;
+}
+
+
+
+
+
+.summary-box{
+    justify-self: start;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .1);}
+
+.summary-heading{
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+
+.summary-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.summary-list-score{
+    margin-left: 5rem;
+}
+
+.summary-list-score span{
+    display: inline;
+    color: #aaa;
+}
+
+
+.summary-button{
+    display: inline-block;
+    background-color: var(--violet-blue);
+    color: var(--light-lavender);
+    text-align: center;
+    padding: 0.6rem 7.4rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+
+    transition: all 1s;
+}
+
+
+.summary-button:hover{
+    background-color: var(--light-royal-blue);
+}
+
+.summary-button:active{
+    background-color: var(--light-royal-blue);
+}
+
+
+/* ********************* */
+/* SUMMARY ITEM BACKGROUND COLOR */
+/* ********************* */
+
+.transparent-red{
+    background-color: #fef2f2;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.red{
+    color: #F55;
+}
+
+
+.transparent-orange{
+    background-color: #fff7ed;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.yellow{
+    color: #fde047;
+}
+
+
+.transparent-teal{
+    background-color: #f0fdfa;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.teal{
+    color: #5eead4;
+}
+
+
+.transparent-blue{
+    background-color: #eff6ff;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+
+.blue{
+    color: #2563eb;
+}
+
+
+
+/* Add this at the end of your CSS file */
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
+    .section--card {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .result-box {
+        padding: 3.4rem;
+        max-width: 100%;
+    }
+
+    .circle {
+        top: 25%;
+        right: 27%;
+    }
+
+    .summary-box {
+        padding: 1rem;
+    }
+
+    .summary-list {
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .summary-list-score {
+        margin-left: 0;
+    }
+
+    .summary-button {
+        width: 100%;
+    }
+}
+
+/* Tablet view */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .section--card {
+        max-width: 80%;
+    }
+}
+
+/* Larger screens */
+@media screen and (min-width: 1025px) {
+    .section--card {
+        max-width: 50%;
+    }
+}
